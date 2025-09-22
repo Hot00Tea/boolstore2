@@ -18,7 +18,6 @@ public class Boolstore2Application {
 	@Bean
 	public CommandLineRunner dataLoader(BookService bookService) {
 		return args -> {
-			// Пример записи для проверки
 			bookService.save(new Book("Clean Code", "Robert C. Martin", "9780132350884",
 					new BigDecimal("35.50"), "Classic book about writing clean code", null));
 			System.out.println("Books in DB:");

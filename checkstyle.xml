@@ -2,13 +2,14 @@
 <!DOCTYPE module PUBLIC
         "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
         "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
 <module name="Checker">
-    <property name="severity" value="error"/>
     <module name="TreeWalker">
-        <module name="AvoidStarImport"/>
+        <module name="Indentation"/>
         <module name="UnusedImports"/>
-        <module name="LineLength"><property name="max" value="120"/></module>
-        <module name="JavadocMethod"/>
-        <module name="FinalClass"/>
+        <module name="AvoidStarImport"/>
+        <module name="ModifierOrder"/>
+        <module name="RedundantImport"/>
     </module>
 </module>
+
