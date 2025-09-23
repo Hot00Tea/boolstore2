@@ -1,17 +1,15 @@
-package com.example.bookstore.entity;
+package com.example.boolstore2.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Column;
-
+import java.math.BigDecimal;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
 
 @Entity
 @Getter
@@ -39,13 +37,4 @@ public class Book {
     private String description;
 
     private String coverImage;
-
-    public Book(String title, String author, String isbn, BigDecimal price, String description, String coverImage) {
-        this.title = title;
-        this.author = author;
-        this.isbn = isbn;
-        this.price = price;
-        this.description = description;
-        this.coverImage = coverImage;
-    }
 }
