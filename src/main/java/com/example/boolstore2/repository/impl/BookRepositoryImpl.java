@@ -18,6 +18,7 @@ public class BookRepositoryImpl implements BookRepository {
     @Transactional
     public Book save(Book book) {
         if (book.getId() == null) {
+
             em.persist(book);
             return book;
         } else {
